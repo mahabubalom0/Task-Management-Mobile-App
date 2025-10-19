@@ -4,6 +4,7 @@ import 'package:e_learning_work/screens/day_15/screens/onbording_3.dart';
 import 'package:e_learning_work/screens/day_15/screens/splash.dart';
 import 'package:e_learning_work/screens/day_15/util/Allcolor.dart';
 import 'package:e_learning_work/screens/day_15/util/allstyles.dart';
+import 'package:e_learning_work/screens/day_15/widget/custome_btn.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter/rendering.dart';
 

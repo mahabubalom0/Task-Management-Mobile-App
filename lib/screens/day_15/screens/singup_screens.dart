@@ -1,8 +1,10 @@
+import 'package:e_learning_work/screens/day_15/screens/singup_email_screens.dart';
 import 'package:e_learning_work/screens/day_15/screens/splash.dart';
-import 'package:e_learning_work/screens/day_15/screens/widget/custome_textfiled.dart';
 import 'package:e_learning_work/screens/day_15/util/Allcolor.dart';
 import 'package:e_learning_work/screens/day_15/util/allicons.dart';
 import 'package:e_learning_work/screens/day_15/util/allstyles.dart';
+import 'package:e_learning_work/screens/day_15/widget/custome_btn.dart';
+import 'package:e_learning_work/screens/day_15/widget/custome_textfiled.dart';
 import 'package:flutter/material.dart';
 
 class SingupScreens extends StatefulWidget {
@@ -13,6 +15,8 @@ class SingupScreens extends StatefulWidget {
 }
 
 class _SingupScreensState extends State<SingupScreens> {
+  TextEditingController nameclt= TextEditingController();
+  TextEditingController passclt= TextEditingController();
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -20,7 +24,11 @@ class _SingupScreensState extends State<SingupScreens> {
       appBar: AppBar(
         backgroundColor: Allcollor.prymaricolor,
         centerTitle: true,
-        leading: Icon(arrow_back,color: Allcollor.white,),
+        leading: InkWell(
+            onTap: (){
+              Navigator.pop(context);
+            },
+            child: Icon(arrow_back,color: Allcollor.white,)),
         title: Image.asset("assets/png/slider4.png"),
       ),
       body: SizedBox(
@@ -47,6 +55,7 @@ class _SingupScreensState extends State<SingupScreens> {
             Padding(
               padding: const EdgeInsets.all(18.0),
               child: Custome_textfiled(
+                textcontroler: nameclt,
                 hind: "Enter Your Full Name",
                 prefixicon: Icon(persion),
 
@@ -55,6 +64,7 @@ class _SingupScreensState extends State<SingupScreens> {
             Padding(
               padding: const EdgeInsets.only(left: 18.0,right: 18),
               child: Custome_textfiled(
+                textcontroler: passclt,
                 hind: "Enter Your Password",
                 prefixicon: Icon(key),
 
@@ -66,6 +76,7 @@ class _SingupScreensState extends State<SingupScreens> {
             Padding(
               padding: const EdgeInsets.all(18.0),
               child: Metarial_button(ontap: (){
+                Navigator.of(context).push(MaterialPageRoute(builder: (context)=>SingupEmailScreens()));
 
 
               }, title: "Continue"),

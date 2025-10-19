@@ -13,3 +13,10 @@ import 'package:flutter/material.dart';
  TextStyle headin6= TextStyle(
   fontSize: Allsize.size15,color: Allcollor.white,fontWeight: FontWeight.w700
  );
+
+ TextStyle headinalart= TextStyle(
+  fontSize: Allsize.size20,color: Allcollor.black,fontWeight: FontWeight.w700
+ );
+ TextStyle headintitle= TextStyle(
+  fontSize: Allsize.size24,color: Allcollor.black,fontWeight: FontWeight.w700
+ );

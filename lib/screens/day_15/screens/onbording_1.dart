@@ -5,6 +5,7 @@ import 'package:e_learning_work/screens/day_15/screens/splash.dart';
 import 'package:e_learning_work/screens/day_15/util/Allcolor.dart';
 import 'package:e_learning_work/screens/day_15/util/allicons.dart';
 import 'package:e_learning_work/screens/day_15/util/allsize.dart';
+import 'package:e_learning_work/screens/day_15/widget/custome_btn.dart';
 import 'package:flutter/material.dart';
 
 class Onbording1 extends StatelessWidget {

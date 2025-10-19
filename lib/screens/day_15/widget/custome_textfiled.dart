@@ -9,16 +9,24 @@ class Custome_textfiled extends StatelessWidget {
     super.key,
     required this.hind,
     required this.prefixicon,
+    required this.textcontroler,
+
+
+
 
   });
   String hind;
   Widget prefixicon;
+  final TextEditingController textcontroler;
+
 
 
   @override
   Widget build(BuildContext context) {
     return TextFormField(
       style: headin6,
+      controller: textcontroler,
+
 
 
       decoration: InputDecoration(

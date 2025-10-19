@@ -9,5 +9,8 @@ class Assets {
   static const String pngSlider2 = 'assets/png/slider2.png';
   static const String pngSlider3 = 'assets/png/slider3.png';
   static const String pngSlider4 = 'assets/png/slider4.png';
+  static const String pngSlider5 = 'assets/png/slider5.png';
+  static const String pngSlider6 = 'assets/png/slider6.png';
+  static const String pngSlider7 = 'assets/png/slider7.png';
 
 }

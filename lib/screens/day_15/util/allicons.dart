@@ -7,3 +7,5 @@ const IconData persion = Icons.person_pin;
 const IconData key = Icons.key_rounded;
 const IconData ie = Icons.visibility;
 const IconData ieof = Icons.visibility_off;
+const IconData close = Icons.close;
+const IconData email = Icons.email;

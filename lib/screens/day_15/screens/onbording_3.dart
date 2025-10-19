@@ -1,9 +1,11 @@
 import 'dart:math';
 
+import 'package:e_learning_work/screens/day_15/screens/login_screens.dart';
 import 'package:e_learning_work/screens/day_15/screens/singup_screens.dart';
 import 'package:e_learning_work/screens/day_15/screens/splash.dart';
 import 'package:e_learning_work/screens/day_15/util/Allcolor.dart';
 import 'package:e_learning_work/screens/day_15/util/allstyles.dart';
+import 'package:e_learning_work/screens/day_15/widget/custome_btn.dart';
 import 'package:flutter/material.dart';
 
 class Onbording3 extends StatelessWidget {
@@ -48,7 +50,10 @@ class Onbording3 extends StatelessWidget {
                     Navigator.of(context).push(MaterialPageRoute(builder: (context)=>SingupScreens()));
                   }, title: "Sing Up"),
                   SizedBox(height: 10,),
-                  Metarial_button(ontap: (){}, title: "Login",onman: true,)
+                  Metarial_button(ontap: (){
+
+                    Navigator.of(context).push(MaterialPageRoute(builder: (context)=>LoginScreens()));
+                  }, title: "Login",onman: true,)
 
 
               ],),
