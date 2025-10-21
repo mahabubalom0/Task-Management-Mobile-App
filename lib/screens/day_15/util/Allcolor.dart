@@ -10,5 +10,7 @@ class Allcollor{
   static final bluecolor= Color(0xff246BFD);
   static final white= Colors.white;
   static final black= Colors.black;
+  static final hejcolor= Color(0xff292B3E);
+
 
 }

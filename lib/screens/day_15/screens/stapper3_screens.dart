@@ -6,6 +6,8 @@ import 'package:e_learning_work/screens/day_15/widget/custome_btn.dart';
 import 'package:e_learning_work/screens/day_15/widget/custome_textfiled.dart';
 import 'package:flutter/material.dart';
 
+import '../../class_16/buttom_nav_bar.dart';
+
 class Stapper3Screens extends StatelessWidget {
   const Stapper3Screens({super.key});
 
@@ -52,7 +54,9 @@ class Stapper3Screens extends StatelessWidget {
                               SizedBox(height: 10,),
                               Text("Parto team was created successfully, create your latest project so you can work with your team",style: headinalart,),
                               SizedBox(height: 25,),
-                              Metarial_button(ontap: (){}, title: "Next")
+                              Metarial_button(ontap: (){
+                                Navigator.of(context).push(MaterialPageRoute(builder: (context)=> ButtomNavBar()));
+                              }, title: "Next")
                             ],
                           ),
                         ),

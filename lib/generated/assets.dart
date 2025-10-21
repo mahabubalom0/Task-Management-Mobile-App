@@ -2,6 +2,7 @@
 class Assets {
   Assets._();
 
+  static const String pngMahabub = 'assets/png/mahabub.jpg';
   static const String pngPassswordIcon = 'assets/png/passsword_icon.png';
   static const String pngPersion  = 'assets/png/persion .png';
   static const String pngRangle = 'assets/png/rangle.png';
